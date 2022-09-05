@@ -19,7 +19,14 @@ const routes = [
   {
     path: '/home',
     name: 'home',
-    component: () => import('@/views/HomeView')
+    redirect: '/welcome',
+    component: () => import('@/views/HomeView'),
+    children: [
+      // 欢迎页面
+      { path: '/welcome', name: 'welcome', component: () => import('@/views/WelcomeView') },
+      // 用户管理页面
+      { path: '/users', name: 'users', component: () => import('@/views/users/UsersView') }
+    ]
   }
 ]
 
