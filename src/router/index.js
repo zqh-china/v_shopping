@@ -25,7 +25,11 @@ const routes = [
       // 欢迎页面
       { path: '/welcome', name: 'welcome', component: () => import('@/views/WelcomeView') },
       // 用户管理页面
-      { path: '/users', name: 'users', component: () => import('@/views/users/UsersView') }
+      { path: '/users', name: 'users', component: () => import('@/views/users/UsersView') },
+      // 权限管理页面
+      { path: '/rights', name: 'rights', component: () => import('@/views/power/RightsView') },
+      // 角色管理
+      { path: '/roles', name: 'roles', component: () => import('@/views/power/RolesView') }
     ]
   }
 ]
