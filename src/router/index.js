@@ -31,7 +31,9 @@ const routes = [
       // 角色管理
       { path: '/roles', name: 'roles', component: () => import('@/views/power/RolesView') },
       // 商品分类
-      { path: '/categories', name: 'categories', component: () => import('@/views/goods/CateView') }
+      { path: '/categories', name: 'categories', component: () => import('@/views/goods/CateView') },
+      // 商品参数
+      { path: '/params', name: 'params', component: () => import('@/views/goods/ParamsView') }
     ]
   }
 ]
