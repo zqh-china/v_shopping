@@ -29,7 +29,9 @@ const routes = [
       // 权限管理页面
       { path: '/rights', name: 'rights', component: () => import('@/views/power/RightsView') },
       // 角色管理
-      { path: '/roles', name: 'roles', component: () => import('@/views/power/RolesView') }
+      { path: '/roles', name: 'roles', component: () => import('@/views/power/RolesView') },
+      // 商品分类
+      { path: '/categories', name: 'categories', component: () => import('@/views/goods/CateView') }
     ]
   }
 ]

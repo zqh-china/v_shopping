@@ -28,7 +28,8 @@ import {
   MessageBox,
   Tree,
   Select,
-  Option
+  Option,
+  Cascader
 } from 'element-ui'
 
 // 将组件注册为全局可用的组件
@@ -58,6 +59,7 @@ Vue.use(Dialog)
 Vue.use(Tree)
 Vue.use(Select)
 Vue.use(Option)
+Vue.use(Cascader)
 
 // 全局挂载Message
 Vue.prototype.$message = Message
