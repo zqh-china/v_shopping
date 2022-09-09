@@ -33,7 +33,11 @@ const routes = [
       // 商品分类
       { path: '/categories', name: 'categories', component: () => import('@/views/goods/CateView') },
       // 商品参数
-      { path: '/params', name: 'params', component: () => import('@/views/goods/ParamsView') }
+      { path: '/params', name: 'params', component: () => import('@/views/goods/ParamsView') },
+      // 商品列表
+      { path: '/goods', name: 'goods', component: () => import('@/views/goods/ListView') },
+      // 添加商品
+      { path: '/goods/add', name: 'add', component: () => import('@/views/goods/AddView') }
     ]
   }
 ]
