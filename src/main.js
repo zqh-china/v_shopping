@@ -10,6 +10,8 @@ import './assets/css/global.css'
 import './assets/fonts/iconfont.css'
 // 导入TreeTable组件
 import TreeTable from 'vue-table-with-tree-grid'
+// 导入地区选择器
+import { VDistpicker } from 'v-distpicker'
 // 导入富文本编辑器
 import VueQuillEditor from 'vue-quill-editor'
 // 导入富文本编辑器对应的样式
@@ -33,6 +35,7 @@ axios.interceptors.request.use(config => {
 
 // 注册为全局组件
 Vue.component('tree-table', TreeTable)
+Vue.component('v-distpicker', VDistpicker)
 
 // 全局时间过滤器
 Vue.filter('dateFormat', (originVal) => {
