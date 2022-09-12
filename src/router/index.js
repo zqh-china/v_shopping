@@ -39,7 +39,9 @@ const routes = [
       // 添加商品
       { path: '/goods/add', name: 'add', component: () => import('@/views/goods/AddView') },
       // 订单管理
-      { path: '/orders', name: 'orders', component: () => import('@/views/order/OrderView') }
+      { path: '/orders', name: 'orders', component: () => import('@/views/order/OrderView') },
+      // 数据统计
+      { path: '/reports', name: 'reports', component: () => import('@/views/report/ReportView') }
     ]
   }
 ]
